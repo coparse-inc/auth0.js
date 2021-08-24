@@ -201,9 +201,12 @@ PasswordlessAuthentication.prototype.verify = function(options, cb) {
     'verificationCode',
     'phoneNumber',
     'email',
-    'auth0Client'
+    'auth0Client',
+    'clientID'
   ]);
   cleanOption = objectHelper.toSnakeCase(cleanOption, ['auth0Client']);
+
+  console.log({ cleanOption })
 
   url = urljoin(this.baseOptions.rootUrl, 'passwordless', 'verify');
 

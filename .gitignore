@@ -23,8 +23,6 @@ release
 
 .DS_Store
 
-dist
-
 .gitignore
 coverage
 test-results.xml
